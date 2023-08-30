@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>your page title goes here</title>
+  <meta charset="utf-8" />
+  <style type="text/css">
+  	html {
+  		font-size: 20px;
+		}
+		table {
+  		font-size: 1.5rem;
+  		width: 100%;
+  		background-color: lightsteelblue;
+  		border: 5px solid black;
+  	}
+  	tr {
+  		width: 100%;
+  	}
+  	td {
+  		width: 30%;
+
+  		border: 1px solid black;
+  	}
+  	thead th{
+  		text-decoration: underline;
+  		font-size: 1.75rem;
+  	}
+  	tbody tr:nth-child(1) {
+  		color: red;
+  	}
+  	tbody tr:nth-child(2) {
+  		color: green;
+  	}
+
+  	tbody tr:nth-child(3) {
+  		color: blue;
+  	}
+  	th {
+
+  		border: 1px solid black;
+  		width: 30%;
+  		text-align: left;
+  	}
+  	tfoot td {
+  		border: none;
+  		border-top: 5px solid gray;
+  		background-color: white;
+  		font-size: 1rem;
+  	}
+  	[scope="col"] {
+  		padding: 0 10px;
+  		text-decoration: underline;
+  	}
+  	[scope="row"] {
+  		text-transform: uppercase;
+		}
+
+
+  	ul {
+  		list-style-type: none;
+  	}
+  	ol {
+  		list-style-type: upper-roman;
+
+  	}
+
+
+		nav ul {
+		  background-color: yellow;
+		  list-style-type: none;
+		  padding-left: 0;
+		  width: 100%;
+		  font-size: 0;
+		}
+
+		nav li {
+		  color: blue;
+		  width: 25%;
+		  display: inline-block;
+		}
+
+		nav a {
+			font-size: 1rem;
+		  box-sizing: border-box;
+		  line-height: 2.5;
+		  padding: 0 10px;
+		  text-decoration: none;
+		  width: 100%;
+		  display: inline-block;
+		  text-align: center;
+		}
+		nav a:hover,
+		nav a:focus {
+			color: yellow;
+			background-color: green;
+		}
+		p {
+			max-width: 80%;
+		}
+  </style>
+</head>
+<body>
+	<nav>
+	  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Projects</a></li>
+    <li><a href="#">Team</a></li>
+    <li><a href="#">Help</a></li>
+	  </ul>
+	</nav>
+	<article>
+		<header>
+		<h1>The Next Reckoning: Capitalism and Climate Change</h1>
+		<p>By NATHANIEL RICH</p>
+		</header>
+		<p>
+			The world’s most difficult problem has a solution so simple that it can be
+			expressed in four words: Stop burning greenhouse gases. How exactly to pull
+			this off is somewhat more complicated — just not as complicated as most
+			Americans have been led to believe.
+		</p>
+		<footer>
+			<h2>Related Articles</h1>
+			<ul>
+				<li>What Survival Looks Like After the Oceans Rise</li>
+				<li>How Big Business is Hedging Against the Apocalypse</li>
+				<li>Climate Chaos is Coming–and the Pinkertons Are Ready</li>
+			</ul>
+		</footer>
+	</article>
+	<article>
+		<header>
+			<h1>5 Reasons to use jQuery</h1>
+		</header>
+		<ol reversed>
+			<li>Open Source</li>
+			<li>Endless Tutorials</li>
+			<li>Huge Library</li>
+			<li>Cross-browser Compatibility</li>
+			<li>Large Variety of Plugins</li>
+		</ol>
+	</article>
+	<article>
+		<dl>
+			<dt>HTML</dt>
+			<dd>
+				Hypertext Markup Language, a standardized system for tagging text files to
+				achieve font, color, graphic, and hyperlink effects on World Wide Web pages.
+			</dd>
+			<dt>Semantic</dt>
+			<dd>
+				Relating to meaning in language or logic.
+			</dd>
+			<dt>CSS</dt>
+			<dd>
+				A style sheet language used for describing the presentation of a document
+				written in a markup language.
+			</dd>
+		</dl>
+	</article>
+	<table>
+		<thead>
+			<tr>
+				<th scope="col">Color Name</th>
+				<th scope="col">Color Hex</th>
+				<th scope="col">Color Decimal</th>
+				
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th scope="row">Red</th>
+				<td>#f00</td>
+				<td>255, 0, 0</td>
+				
+			</tr>
+			<tr>
+				<th scope="row">Green</th>
+				<td>#0f0</td>
+				<td>0, 255, 0</td>
+				
+			</tr>
+			<tr>
+				<th scope="row">Blue</th>
+				<td>#00f</td>
+				<td>0, 0, 255</td>
+
+				
+			</tr>
+		</tbody>
+		<tfoot>
+			<td>name</td>
+			<td>#rrggbb</td>
+			<td>red, green, blue</td>
+		</tfoot>
+		
+	</table>
+
+</body>
+</html>

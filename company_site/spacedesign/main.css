@@ -1,0 +1,167 @@
+@import url("reset.css");
+* {
+	box-sizing: border-box;
+}
+html {
+	font: normal 20px "Avenir", Helvetica, Arial, sans-serif;
+}
+header, main, footer {
+	width: 100%;
+}
+
+body {
+	text-align: center;
+	color: #45494d;
+}
+
+h2 {
+	font-size: 36px;
+	font-weight: 600;
+	padding-bottom: 28px;
+}
+h2:before,
+h2:after {
+	display: inline-block;
+	padding: 0 24px;
+	font-size: 30px;
+	content: "\2022";
+	vertical-align: 3px;
+}
+h3 {
+	font-size: 24px;
+	font-weight: 900;
+	color: #3e59b2;
+	padding-bottom: 20px;
+}
+
+main {
+	background: #ffffff;
+	padding-top: 115px;
+	padding-bottom: 0;
+}
+article img {
+	margin: 20px auto 40px auto;
+
+}
+main p {
+	padding: 0 90px 0 90px;
+	font-weight: 500;
+}
+
+article {
+	padding-bottom: 70px;
+}
+
+header {
+
+	padding: 135px 0 0 0;
+	background: #2f2840 url("images/bg_body.gif") 50% 0 repeat;
+
+}
+header * {
+	display: block;
+	margin: 0 auto;
+
+}
+header h1 {
+	padding: 0 0 115px 0;
+}
+
+header ul {
+	padding-bottom: 45px;
+}
+nav {
+	font-size: 26px;
+	text-transform: uppercase;
+}
+nav li {
+	padding: 0 35px;
+	display: inline-block;
+}
+nav a {
+	text-decoration: none;
+	color: #cacaca;
+}
+nav a.active{
+	font-weight: bold;
+	color: #6db9ff;
+}
+footer nav {
+	font-size: 0;
+}
+
+footer nav img {
+	/*background: yellow;*/
+}
+
+footer {
+	padding-top: 85px;
+	background-color: #e7e7e7;
+	padding-bottom: 78px;
+	color: #b2b2b2;
+}
+footer p {
+	margin: 0 auto;
+	max-width: 500px;
+}
+
+ul#sprites {
+	/*padding-top: 40px;*/
+}
+ul#sprites li {
+	padding: 0 60px;
+	padding-top: 40px;
+}
+.column {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.projects-img {
+	/*margin-left: -100px;*/
+	margin-top: 30px;
+}
+.projects-h2 {
+	margin-bottom: -27px;
+}
+ul.team_list {
+	margin: 100px 0;
+}
+ul.team_list figcaption {
+	margin-top: -20px;
+	font-size: 24px;
+	padding-bottom: 20px;
+}
+ul.team_list li {
+	margin: 0 30px 0 30px;
+	display: inline-block;
+}
+ul.team_list a {
+	
+	color: #3e59b2;
+	text-decoration: none;
+}
+
+
+#twit {
+	height: 46px;
+	width: 46px;
+	background: url(images/icons_social-media.png) 0 0;
+}
+
+#face {
+	height: 46px;
+	width: 46px;
+	background: url(images/icons_social-media.png) -46px -46px;
+
+}
+#mail {
+	height: 46px;
+	width: 46px;
+	background: url(images/icons_social-media.png) -92px -92px;
+
+}
+#ins {
+	height: 46px;
+	width: 46px;
+	background: url(images/icons_social-media.png) -138px -138px;
+}

@@ -1,0 +1,101 @@
+@import url("whitespace-reset.css");
+* {
+	box-sizing: border-box;
+
+}
+body {
+	font: normal 18px 'Roboto Condensed', sans-serif;
+	color: #3e606f;
+	background: linear-gradient(to bottom, #d1dbbd, #fcfff5);
+}
+body {
+	font-family: "Roboto Condensed", sans-serif;
+}
+header, main, footer {
+	width: 960px;
+	margin: 0 auto;
+}
+
+main {
+	padding: 30px 30px 14px 30px;
+	background-color: #ffffff;
+	box-shadow: 0 5px 5px #b5b5b5;
+}
+
+header {
+	overflow: auto;
+}
+
+a {
+	text-decoration: none;
+
+}
+
+header img {
+	padding: 20px 0 20px 20px;
+	float: left;
+}
+main img {
+	padding-bottom: 36px;
+}
+h1 {
+	float: left;
+	padding: 65px 0 30px 15px;
+	color: #193441;
+	font-size: 36px;
+	font-weight: normal;
+	
+}
+
+nav ul {
+	margin: 95px 0 0 118px;
+	display: block;
+	float: left;
+}
+nav ul li {
+	display: inline-block;
+	color: #d1dbbd;
+	font-size: 18px;
+	background-color: #fcfff5;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	/*margin-left: 3px;*/
+}
+nav ul li a {
+	color: #91aa9d;
+	display: block;
+	text-decoration: none;
+	padding: 10px 40px 14px;
+}
+.clicked {
+	background-color: #91aa9d;
+}
+.clicked a {
+	color: #fcfff5;
+}
+h2 {
+	padding: 0 0 25px;
+	font-size: 32px;
+	color: #3e606f;
+	font-weight: normal;
+}
+article {
+	overflow: hidden;
+}
+article p {
+	padding-bottom: 20px;
+}
+
+article figure {
+	padding: 0 0 0 30px;
+	float: right;
+}
+
+img.masthead {
+	margin: 0 0 30px 0;
+}
+
+footer {
+	margin: 15px auto 35px auto;
+	font-size: 14px;
+}

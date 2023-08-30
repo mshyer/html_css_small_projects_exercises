@@ -1,0 +1,120 @@
+form {
+	font-size: 16px;
+	margin: 0 10rem 0 10rem;
+	font-family: "helvetica", sans-serif;
+}
+fieldset {
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+.partial {
+    box-sizing: border-box;
+    display: inline-block;
+}
+.one_half {
+    width: 50%;
+}
+.right {
+    padding-left: 0.5rem;
+}
+
+.left {
+    padding-right: 0.5rem;
+}
+.both {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+.state {
+    width: 10%;
+}
+.city {
+    width: 50%;
+}
+.zip {
+    width: 40%;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+dl {
+    margin-bottom: 0;
+}
+dl + dl {
+    margin-top: 0;
+}
+p {
+    margin-top: 0;
+}
+
+dt {
+    margin-bottom: 0.5rem;
+}
+
+
+/*br {
+	display: block;
+	content: "";
+	margin-top: 1rem;
+}*/
+dd {
+    margin: 0;
+}
+input {
+	border: 1px solid #cecece;
+	margin-bottom: 1rem;
+}
+input[type="text"],
+input[type="email"] {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.5rem 0.5rem;
+
+}
+/*input[type="text"] {
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0.5rem 0.5rem;
+}
+
+input[type="email"] {
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0.5rem 0.5rem;
+}*/
+input[type="radio"] {
+	margin-bottom: 0px;
+}
+input[type="checkbox"] {
+	margin-bottom: 0px;
+}
+select {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+	border-color: #cecece;
+	padding: 0.5rem 0.5rem;
+	margin-bottom: 1rem;
+
+
+}
+
+dd > label {
+	font-size: 0.9rem;
+}
+
+textarea {
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	height: 6rem;
+}
+
+input.zip {
+	width: 5rem;
+}

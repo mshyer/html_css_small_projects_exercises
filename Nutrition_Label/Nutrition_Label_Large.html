@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Nutrition Facts Label</title>
+  <meta charset="utf-8" />
+  <style>
+  	/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*Reset*/
+		html, body, div, span, applet, object, iframe,
+		h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+		a, abbr, acronym, address, big, cite, code,
+		del, dfn, em, img, ins, kbd, q, s, samp,
+		small, strike, strong, sub, sup, tt, var,
+		b, u, i, center,
+		dl, dt, dd, ol, ul, li,
+		fieldset, form, label, legend,
+		table, caption, tbody, tfoot, thead, tr, th, td,
+		article, aside, canvas, details, embed, 
+		figure, figcaption, footer, header, hgroup, 
+		menu, nav, output, ruby, section, summary,
+		time, mark, audio, video {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			font-size: 100%;
+			font: inherit;
+			vertical-align: baseline;
+		}
+		/* HTML5 display-role reset for older browsers */
+		article, aside, details, figcaption, figure, 
+		footer, header, hgroup, menu, nav, section {
+			display: block;
+		}
+		body {
+			line-height: 1;
+		}
+		ol, ul {
+			list-style: none;
+		}
+		blockquote, q {
+			quotes: none;
+		}
+		blockquote:before, blockquote:after,
+		q:before, q:after {
+			content: '';
+			content: none;
+		}
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			border-spacing: 0;
+		}
+/*Reset*/
+	html {
+		font-size: 24px;
+	}
+  	body {
+  		font-family: Helvetica, Arial, sans-serif;
+  	}
+
+  	article {
+  		display: block;
+  		box-sizing: border-box;
+  		background-color: white;
+/*  		min-width: 373px;
+  		min-height: 732px;
+  		max-width: 373px;
+  		max-height: 732px;*/
+  		min-width: 684px;
+  		min-height: 1200px;
+  		max-width: 684px;
+  		max-height: 1200px;
+  		padding: .5rem .5rem .5rem .5rem;
+  		border: 2px solid black;
+  		margin: 5px 5px;
+  	}
+
+  	header {
+  		padding-top: 5px;
+  	}
+  	header p {
+  		line-height: .75rem;
+  		font-size: 1.25rem;
+  	}
+  	em {
+  		font-style: italic;
+  	}
+  	p {
+  		margin-top: 0.5rem;
+  		margin-bottom: .75rem;
+  	}
+
+  	article > p {
+  		font-size: 1.1rem;
+  		margin-left: .75rem;
+  		text-indent: -.75rem;
+  	}
+
+  	h1 {
+  		font-size: 3rem;
+  		font-weight: bold;
+  		margin-bottom: 0;
+  		font-family: "Franklin Gothic Heavy", Helvetica, Arial, sans-serif;
+  	}
+  	h2 {
+  		font-size: 0.5rem;
+  	}
+  	h3 {
+  		font-size: 0.75rem;
+  	}
+
+  	thead {
+  		display: block;
+  		box-sizing: border-box;
+  		border-top: 1rem solid black;
+  	}
+  	tbody {
+  		display: block;
+  		box-sizing: border-box;
+  		border-top: 0.5rem solid black;
+  	}
+  	tfoot {
+  		display: block;
+  		box-sizing: border-box;
+  		border-top: 1rem solid black;
+  	}
+  	tr {
+  		display: block;
+  		box-sizing: border-box;
+  		border-bottom: 1px solid black;
+  		line-height: 1.5rem;
+  	}
+  	th {
+  		width: auto;
+  		font-weight: bold;
+  		font-family: Helvetica, Arial, sans-serif;
+  		font-size: 1.25rem;
+  		white-space: nowrap;
+  	}
+  	td {
+  		white-space: nowrap;
+  	}
+
+  	article table:nth-of-type(2) thead {
+  		border-top: 0px;
+  	}
+
+  	article table:nth-of-type(2) tbody {
+  		border-top: 1px solid black;
+  		padding-bottom: 5px;
+  	}
+  	article table:nth-of-type(2) tr {
+  		border-bottom: 0;
+  		line-height: 1.2rem;
+  	}
+  	article table:nth-of-type(2) tr * {
+  		font-size: 1rem;
+  	}
+  	article table:nth-of-type(2) tr td {
+  		display: inline-block;
+  		box-sizing: border-box;
+  		width: 20%;
+  		text-align: left;
+  		margin-left: -5px;
+  	}
+  	article table:nth-of-type(2) tr td:nth-child(1) {
+  		display: inline-block;
+  		box-sizing: border-box;
+  		width: 35%;
+  		text-align: left;
+  		margin-left: 0;
+  	}
+
+  	thead tr:first-child th {
+  		font-size: 1rem;
+  	}
+  	.indented-table-data {
+  		padding-left: 1rem;
+
+  	}
+  	tr td:nth-child(2) {
+  		padding-left: 0.5rem;
+  	}
+  	tr td:nth-child(3) {
+  		text-align: right;
+  		width: 100%;
+  	}
+  	article table:nth-of-type(1) tbody tr td:nth-child(3) {
+			font-weight: bold;
+  	}
+
+  	table:nth-of-type(1) thead td:nth-child(4) {
+  		padding-left: 0.4rem;
+  	}
+  </style>
+</head>
+<body>
+	<article> 
+		<header>
+			<h1>Nutrition Facts</h1>
+			<p>Serving Size 2/3 cup (55g)</p>
+			<p>Servings Per Container About 8</p>
+		</header>
+			<table>
+				<thead> <!-- amount per serving -->
+					<tr>
+						<th>Amount Per Serving</th>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<th>Calories</th>
+						<td>230</td>
+						<td>Calories from Fat</td>
+						<td>40</td>
+					</tr>
+				</thead>
+				<tbody> <!-- Macro Nutrients -->
+					<tr>
+						<td></td>
+						<td></td>
+						<td>% Daily Value*</td>
+						<td></td>
+					</tr>
+					<tr>
+						<th>Total Fat</th>
+						<td>8g</td>
+						<td>12%</td>
+						<td></td>
+					</tr>
+					<tr >
+						<td class="indented-table-data">Saturated Fat</td>
+						<td>1g</td>
+						<td>5%</td>
+						<td></td>
+					</tr>
+					<tr >
+						<td class="indented-table-data"><em>Trans</em> Fat</td>
+						<td>0g</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<th>Cholesterol</th>
+						<td>0mg</td>
+						<td>0%</td>
+						<td></td>
+					</tr>
+					<tr>
+						<th>Sodium</th>
+						<td>160mg</td>
+						<td>7%</td>
+						<td></td>
+					</tr>
+					<tr>
+						<th>Total Carbohydrate</th>
+						<td>37g</td>
+						<td>12%</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="indented-table-data">Dietary Fiber</td>
+						<td>4g</td>
+						<td>16%</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="indented-table-data">Sugars</td>
+						<td>1g</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<th>Protein</th>
+						<td>3g</td>
+						<td></td>
+						<td></td>
+					</tr>
+				</tbody>
+				<tfoot> <!-- vitamins and minerals -->
+					<tr>
+						<td>Vitamin A</td>
+						<td></td>
+						<td>10%</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Vitamin C</td>
+						<td></td>
+						<td>8%</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Calcium</td>
+						<td></td>
+						<td>20%</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Iron</td>
+						<td></td>
+						<td>45%</td>
+						<td></td>
+					</tr>
+				</tfoot>
+			</table>
+			<p>* Percent Daily Values are based on a 2,000 calorie diet. Your daily value may be higher or lower depending on
+					your calorie needs.
+			</p>
+			<table>
+				<thead>
+					<tr>
+						<td></td>
+						<td>Calories:</td>
+						<td>2,000</td>
+						<td>2,500</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Total Fat</td>
+						<td>Less than</td>
+						<td>65g</td>
+						<td>80g</td>
+					</tr>
+					<tr>
+						<td class="indented-table-data">Sat Fat</td>
+						<td>Less than</td>
+						<td>20g</td>
+						<td>25g</td>
+					</tr>
+					<tr>
+						<td>Cholesterol</td>
+						<td>Less than</td>
+						<td>300mg</td>
+						<td>300mg</td>
+					</tr>
+					<tr>
+						<td>Sodium</td>
+						<td>Less than</td>
+						<td>2,400mg</td>
+						<td>2,400mg</td>
+					</tr>
+					<tr>
+						<td>Total Carbohydrate</td>
+						<td></td>
+						<td>300g</td>
+						<td>375g</td>
+					</tr>
+					<tr>
+						<td class="indented-table-data">Dietary Fiber</td>
+						<td></td>
+						<td>25g</td>
+						<td>30g</td>
+					</tr>
+				</tbody>
+			</table>
+	</article>
+</body>
+</html>
+

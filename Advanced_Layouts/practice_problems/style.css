@@ -1,0 +1,317 @@
+/*reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*END RESET*/
+
+
+body {
+	box-sizing: border-box;
+	font: normal 16px Helvetica, Arial, sans-serif;
+	color: #545459;
+	padding: 0.5rem;
+}
+* {
+	box-sizing: border-box;
+}
+code {
+	font-family: monospace;
+}
+h1, h2, h3 {
+	color: #CE4A4A;
+	font-weight: bold;
+}
+h1 {
+	font-size: 1.5rem;
+	margin-top: 2.5rem;
+}
+h2 {
+	font-size: 1.25rem;
+	margin-top: 2rem;
+}
+h3 {
+	font-size: 1rem;
+	margin-top: 1.75rem;
+}
+ul, p {
+	margin-top: 1.25rem;
+	line-height: 2rem;
+
+}
+ul {
+	margin-left: 4rem;
+	list-style: inside disc;
+}
+li {
+	font-style: italic;
+}
+a {
+	text-decoration: none;
+	color: #545459;
+}
+div {
+	margin-top: 1.75rem;
+	box-sizing: border-box;
+}
+div .wrapper {
+	margin-bottom: 35px;
+}
+.container {
+	border: 2px solid #999;
+	margin: 0 auto;
+	padding: 0 1.25rem 3rem 1.25rem;
+	width: 1000px;
+}
+
+.border_dotted {
+	box-sizing: border-box;
+	border: 2px dashed #555;
+	padding: 30px;
+	margin: 45px;
+	width: 650px;
+
+}
+.spaced a {
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+.padded a {
+	padding: 30px 30px 30px 30px;
+	background: forestgreen;
+	color: white;
+}
+
+.floated a {
+	float: left;
+	box-sizing: border-box;
+	background: forestgreen;
+	color: white;
+	margin: 15px;
+	padding: 25px;
+	border: 3px solid darkgreen;
+	width: 120px;
+
+}
+
+.cleared::after {
+	margin: 0;
+	clear: both;
+	content: "";
+	display: block;
+}
+/*BLOCK NAME SPACING*/
+
+.block .box-1 {
+	background-color: dodgerblue;
+	color: white;
+	margin-top: 1.25rem;
+}
+.block .box-2 {
+	background-color: green;
+	color: white;
+	height: 60px;
+	padding: 20px;
+	margin: 20px;
+}
+.block .box-3 {
+	width: 90px;
+	background-color: tomato;
+	color: white;
+}
+
+.block .box-4 {
+	box-sizing: border-box;
+	width: 180px;
+	height: 120px;
+	background-color: pink;
+	color: white;
+	padding: 20px;
+	margin: 20px;
+
+}
+.block .fl-1 {
+	margin: 0;
+	float: left;
+	color: white;
+	background-color: dodgerblue;
+	border: 1px solid red;
+}
+
+.block .fl-2 {
+	margin: 0;
+	float: right;
+	color: white;
+	background-color: tomato;
+	border: 1px solid red;
+
+}
+.block .fl-3 {
+	margin: 0;
+	background-color: tomato;
+	color: white;
+	width: 40%;
+	height: 70px;
+	line-height: 70px;
+	float: left;
+	text-align: center;
+}
+
+.block .fl-4 {
+	margin: 0;
+	background-color: dodgerblue;
+	color: white;
+	width: 50%;
+	height: 70px;
+	line-height: 70px;
+	float: right;
+	text-align: center;
+}
+.bl-a {
+	display: block;
+	background-color: dodgerblue;
+	text-align: center;
+	color: white;
+	margin: 10px;
+	padding: 10px;
+}
+
+.inline-block .nav {
+	text-align: center;
+}
+.inline-block .nav a {
+	display: inline-block;
+	color: white;
+	background-color: dodgerblue;
+	padding: 20px 30px;
+	margin: 20px 8px 25px;
+	width: 180px;
+}
+.centered {
+	text-align: center;
+}
+/*FLOATS namespacing */
+
+section.float {
+	margin-top: 3.5rem;
+	border-top: 2px dashed #555;
+}
+section.float div > div {
+	color: white;
+	text-align: center;
+	margin: 0;
+}
+.float .fb-1 {
+	background-color: tomato;
+	float: left;
+	width: 50%;
+	padding: 35px;
+
+}
+.float .fb-2 {
+	background-color: dodgerblue;
+	float: left;
+	width: 50%;
+	padding: 35px;
+}
+.float .fb-3 {
+	background-color: green;
+	float: left;
+	width: 100%;
+	padding: 20px;
+}
+
+/*relative positioning section name spacing */
+.relative div {
+
+
+}
+div.absboy {
+	position: relative;
+	display: block;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+
+
+}
+.relative .rb-1 {
+	display: inline-block;
+	text-align: center;
+	color: white;
+	padding: 25px 35px;
+	border-radius: 10px;
+	position: relative;
+	background-color: tomato;
+	left: -40px;
+	bottom: -35px;
+
+}
+.relative .ab-1 {
+	display: inline-block;
+	text-align: center;
+	color: white;
+	padding: 25px 35px;
+	border-radius: 10px;
+	background-color: green;
+	position: absolute;
+	left: 230px;
+	top: -60px;
+	width: 200px;
+
+
+}
+.relative .fb-1 {
+	position: fixed;
+	display: inline-block;
+	background-color: dodgerblue;
+	text-align: center;
+	color: white;
+	padding: 35px 35px;
+	border-radius: 10px;
+	width: 250px;
+	bottom: 50px;
+	left: 50px;
+
+}
+

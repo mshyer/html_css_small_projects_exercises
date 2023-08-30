@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Todo List</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+		<input type="checkbox" name="boiga-check" id="boiga-check">
+		<nav>
+			<table class="nav-table">
+				<thead>
+				<tr class="table-headers">
+					<th>
+						<img src="assessment_209/all-todos.png" alt="all todos" class="table-icon">
+						<p>All Todos</p>
+					</th>
+					<td>
+						<p class="bubble-number">18</p>
+					</td>
+				</tr>
+				</thead>
+				<tbody>
+				
+				<tr class="highlighted">
+					<td>
+						<p>02/16</p>
+					</td>
+					<td>
+						<p class="bubble-number">8</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>03/16</p>
+					</td>
+					<td>
+						<p class="bubble-number">2</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>04/16</p>
+					</td>
+					<td>
+						<p class="bubble-number">1</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>05/16</p>
+					</td>
+					<td>
+						<p class="bubble-number">1</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>06/16</p>
+					</td>
+					<td>
+						<p class="bubble-number">6</p>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+			<table class="nav-table">
+				<thead>
+					<tr>
+						<th>
+							<img src="assessment_209/done.png" alt="completed todos" class="table-icon">
+							<p>Completed</p>
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+				<tr class="completed">
+					<td>
+						<p>02/15</p>
+					</td>
+				</tr>
+				<tr class="completed">
+					<td>
+						<p>03/15</p>
+					</td>
+				</tr>
+				<tr class="completed">
+					<td>
+						<p>04/15</p>
+					</td>
+				</tr>
+				<tr class="completed">
+					<td>
+						<p>05/15</p>
+					</td>
+				</tr>
+				<tr class="completed">
+					<td>
+						<p>06/14</p>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+		</nav>
+		<input type="checkbox" id="modal-toggle">
+		<fieldset>
+			<div id="title-column">
+				<label for="title" id="title-label">Title</label>
+				<label >Due Date</label>
+				<label id="description">Description</label>
+			</div>
+			<div id="input-column">
+				<input type="text" id="title" placeholder="Item 2" name="title" >
+				<input id="day" type="number" step="1" min="1" max="31" placeholder="#"> /
+				<input id="month" type="number" step="1" min="1" max="12" placeholder="#"> /
+				<input id="year" type="number" step="1" min="2022" max="2024" placeholder="#">
+				<textarea id="description-box" name="tweet" rows="4" cols="45" placeholder="Description"></textarea>
+				<input type="submit" name="Save" value="Save">
+				<input type="submit" value="Mark as Complete">
+			</div>
+			
+
+
+			
+
+			
+		</fieldset> 
+	<main>
+		<label for="boiga-check">
+			<img src="assessment_209/hamburger.png" alt="cheez boiga" id="cheez-boiga">
+		</label>
+		<div>
+		</div>
+		<section id="date" class="highlighted">
+			<h1 >02/16</h1>
+			<p class="bubble-number">8</p>
+		</section>
+		<table>
+			<thead>
+				<tr>
+					<th>
+						<label for="modal-toggle">
+							<img src="assessment_209/plus.png" alt="create new todo">
+							<p>Add new to do</p>
+						</label>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<img src="assessment_209/unticked-box.png" alt="checkbox">
+						<p>Item 1</p>
+						<img src="assessment_209/trash.png" alt="delete">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="assessment_209/unticked-box.png" alt="checkbox">
+						<p>Item 2</p>
+						<img src="assessment_209/trash.png" alt="delete">
+					</td>
+				</tr>
+				<tr class="completed">
+					<td>
+						<img src="assessment_209/unticked-box.png" alt="checkbox">
+						<p>Item 3</p>
+						<img src="assessment_209/trash.png" alt="delete">
+					</td>
+				</tr>
+				<tr class="completed">
+					<td>
+						<img src="assessment_209/unticked-box.png" alt="checkbox">
+						<p>Item 4</p>
+						<img src="assessment_209/trash.png" alt="delete">
+					</td>
+				</tr>
+				<tr class="completed">
+					<td>
+						<img src="assessment_209/unticked-box.png" alt="checkbox">
+						<p>Item 5</p>
+						<img src="assessment_209/trash.png" alt="delete">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="assessment_209/unticked-box.png" alt="checkbox">
+						<p>Item 6</p>
+						<img src="assessment_209/trash.png" alt="delete">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="assessment_209/unticked-box.png" alt="checkbox">
+						<p>Item 7</p>
+						<img src="assessment_209/trash.png" alt="delete">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="assessment_209/unticked-box.png" alt="checkbox">
+						<p>Item 8</p>
+						<img src="assessment_209/trash.png" alt="delete">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="assessment_209/unticked-box.png" alt="checkbox">
+						<p>Item 9</p>
+						<img src="assessment_209/trash.png" alt="delete">
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</main>
+
+</body>
+</html>

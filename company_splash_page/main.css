@@ -1,0 +1,104 @@
+@import url("whitespace-reset.css");
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font: 16px 'Nunito Sans', sans-serif;
+}
+header {
+	padding-top: 159px;
+	padding-bottom: 88px;
+}
+footer {
+	display: block;
+	width: 100%;
+	background-color: red;
+
+}
+article {/*
+	display: block;*/
+	padding-bottom: 62px;
+	/*background-color: black;*/
+}
+body {
+	background-image: url("bg_body.gif");
+	margin: 0 90px 143px 90px;
+}
+main {
+	background: #ffffff;
+	max-width: 1000px;
+	padding: 0 90px 0px 90px;
+}
+h2 {
+	font-size: 30px;
+	padding-bottom: 45px;
+	font-size: 1.25rem;
+	text-align: center;
+}
+main h2 {
+	padding-bottom: 23px;
+	font-size: 2.25rem;
+	font-weight: 600;
+	text-align: center;
+	padding-top: 98px;
+	letter-spacing: 0.7px;
+}
+main h3 {
+	text-align: center;
+	font-weight: 800;
+	color: #3e98b2;
+	font-size: 1.5rem;
+	line-height: 30px;
+	letter-spacing: 1.25px;
+	padding-bottom: 20px;
+}
+
+
+p {
+	line-height: 28px;
+	font-size: 1.25rem;
+	text-align: center;
+	letter-spacing: 0.2px;
+}
+
+div.container {
+	display: flex;
+	flex-direction: column;
+}
+div.row {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 122px;
+	background-color: #e7e7e7;
+	height: 116px;
+	padding: 0 90px 0 90px;
+
+}
+.row-item {
+	margin: 0;
+	display: block;
+	flex-basis: 50px;
+	background-color: blue;
+}
+
+.container * {
+	margin: auto;
+}
+.row a {
+	margin: 0;
+	height: 50px;
+	width: 50px;
+}
+@media (max-width: 1200px) {
+  div.row {
+    gap: 50px;
+  }
+}
+@media (max-width: 700px) {
+  div.row {
+    gap: 20px;
+  }
+}

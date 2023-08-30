@@ -1,0 +1,381 @@
+@import url("whitespace-reset.css");
+title {
+	display: none;
+}
+* {
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+a:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+html {
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	color: #444;
+}
+section {
+	padding-bottom: 60px;
+	border-top: 1px solid #efefef;
+	text-align: center;
+	margin: 0 auto;
+	padding: 0 30px;
+	max-width: 1000px;
+}
+h1 {
+	margin: 60px 0 30px 0;
+	font-weight: 100;
+	font-size: 48px;
+
+}
+p {
+	line-height: 20px;
+	margin-bottom: 20px;
+}
+section a {
+	font-weight: bold;
+}
+.button {
+	background: #008000;
+	color: #fff;
+	padding: 10px 30px;
+	margin: 0 160px;
+}
+.button:hover {
+	text-decoration: none;
+	background: #006000;
+}
+
+/*NAV*/
+header#nav {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	border-top: 10px solid #f5f5f5;
+
+	border-bottom: 1px solid #efefef;
+	text-align: center;
+	z-index: 10;
+}
+#nav ul {
+	background-color: #ffffff;
+}
+#nav ul li {
+	/*border: 5px solid blue;*/
+	line-height: 20px;
+	text-align: left;
+	display: inline-block;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 13px;
+	padding: 13px 25px 13px 25px;
+}
+
+
+
+/*FRONT*/
+section#front {
+	margin: 0 0 55px 0;
+	padding: 0px;
+	max-width: 100%;
+}
+
+
+#front header {
+	position: relative;
+	background-image: url("assets/front.jpeg");;
+	background-position: center;
+	top: 55px;
+	width: 100%;
+	height: 428px;
+	
+}
+#front h1 {
+	font-size: 72px;
+	font-weight: 400;
+	color: #ffffff;
+	text-align: center;
+	text-shadow: 0 1px 3px rgba(0,0,0,.4),0 0 30px rgba(0,0,0,.075);
+	z-index: 3;
+	margin-top: 5px;
+	margin-bottom: 0;
+}
+#front h2 {
+	font-size: 31px;
+	font-weight: 400;
+	color: #ffffff;
+	text-align: center;
+	text-shadow: 0 1px 3px rgba(0,0,0,.4),0 0 30px rgba(0,0,0,.075);
+	text-transform: uppercase;
+}
+img#conference-logo {
+	margin: 0 auto;
+	padding-top: 150px;
+}
+/*TICKETS*/
+section#tickets {
+	height: 300px;
+}
+/*SPEAKERS*/
+#speakers-grid {
+	margin: 0 auto;
+	display: grid;
+	max-width: 1000px;
+	gap: 15px;
+	justify-content: center;
+	grid-template-columns: repeat(auto-fill, 280px);
+}
+div.grid-box {
+	position: relative;
+	width: 280px;
+	height: 378px;
+	border: 1px solid #efefef;
+
+}
+.grid-content img {
+	max-width: 100%;
+
+}
+.grid-content h2 {
+	padding: 30px 0 10px 0;
+	font-weight: bold;
+	font-size: 24px;
+	color: #008000;
+}
+.grid-hover-content {
+	height: 100%;
+	font-size: 13px;
+	line-height: 15px;
+	color: #fff;
+	transition: 0.5s;
+	opacity: 0%;
+	background: black;
+	position: absolute;
+	top: 0;
+}
+.grid-hover-content h2 {
+	padding: 20px 0 10px 0;
+	font-weight: bold;
+	font-size: 24px;
+	color: #008000;
+}
+.grid-hover-content:hover {
+	opacity: 90%;
+}
+/*SCHEDULE*/
+table {
+	max-width: 950px;
+	border-bottom: 1px solid #efefef;
+	margin: 0 auto;
+}
+
+td {
+	border-top: 1px solid #efefef;
+}
+
+td {
+	font-weight: 400;
+	font-size: 24px;
+	padding: 10px 10px;
+	text-align: left;
+}
+td a:hover {
+	cursor: pointer;
+}
+
+td h2 {
+	display: inline-block;
+	font-weight: 400;
+	font-size: 24px;
+	vertical-align: middle;
+	padding: 5px 0 0 0;
+}
+td h3 {
+	padding: 10px 0 10px 0;
+	font-weight: bold;
+	font-size: 18px;
+	color: #008000;
+}
+.tag {
+	display: inline-block;
+	padding: 1px 4px;
+	font-size: 7px;
+	font-weight: 400;
+	color: #444;
+	background: #eee;
+	border: 1px solid #aaa;
+
+}
+/*LOCATION*/
+section#location p {
+	text-align: left;
+	line-height: 25px;
+
+}
+
+section#location em {
+	font-style: normal;
+	margin-top: 40px;
+	font-weight: 400;
+}
+img#google {
+	margin: 15px 0 15px;
+}
+
+.table-image img {
+	width: 130px;
+}
+
+/*CALL FOR PAPERS*/
+section#call-for-papers p {
+	text-align: left;
+	line-height: 25px;
+}
+section#call-for-papers a {
+	font-weight: bold;
+	font-size: 18px;
+	color: #008000;
+}
+section#call-for-papers .call-button {
+	background: #008000;
+	font-size: 16px;
+	color: #fff ;
+	padding: 10px 30px;
+}
+.call-button:hover {
+	text-decoration: none;
+	background: #006000;
+}
+
+/*SPONSORS */
+section#sponsors {
+
+	margin-bottom: 60px;
+}
+
+section#sponsors h3 {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 25px;
+	color: #444;
+	text-align: left;
+	margin-bottom: 30px;
+}
+section#sponsors h3:last-of-type {
+	margin-bottom: 5px;
+}
+
+section#sponsors ul {
+	text-align: left;
+	max-width: 850px;
+}
+section#sponsors li {
+	margin: 0 20px 0 0;
+	display: inline-block;
+}
+
+ul#silver img {
+	width: 250px;
+}
+section#sponsors ul#support {
+	max-width: 1000px;
+}
+ul#support img {
+	width: 175px;
+}
+
+/*FOOTER*/
+section#foot {
+	max-width: 100%;
+	padding: 0;
+	padding-bottom: 60px;
+	height: 340px;
+
+	background: url(assets/people.jpeg) no-repeat center 23%;
+
+	background-size: cover;
+}
+footer {
+
+	width: 100%;
+}
+footer h1 {
+	color: white;
+	margin-top: 30px;
+}
+
+#dark-background {
+	background: rgba(0, 0, 0, 0.7);
+	padding: 10px 10px 5px 10px;
+}
+
+#join-br-team {
+	text-align: left;
+	color: #ffffff;
+	text-align: left;
+}
+#join-br-team p {
+	line-height: 22px;
+
+}
+#join-br-team p:last-of-type {
+	line-height: 22px;
+	margin-bottom: 10px;
+
+}
+#join-br-team h2 {
+	opacity: 100%;
+	font-weight: 600;
+	font-size: 31px;
+}
+#join-br-team a {
+	font-size: 16px;
+	color: #008000;
+}
+#join-br-team a.button {
+	text-align: left;
+	margin: 0;
+	margin-bottom: 13px;
+	display: inline-block;
+	color: white;
+}
+
+
+/*MEDIA*/
+@media (max-width: 654px) {
+  	section#front {
+    	height: 300px;
+    }
+  	
+  	#front h1 { font-size: 40px; }
+    #front h2 { font-size: 20px; }
+    header#nav {
+    	display: none;
+    }
+    table tr {
+    	position: relative;
+    	display: block;
+		border-top: 1px solid #efefef;
+    }
+    td {
+    	display: block;
+    	border: none;
+    }
+
+    td.table-time {
+    	text-align: right;
+    }
+    .table-image {
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    }
+    .table-image img {
+    	width: 80px;
+    }
+}

@@ -1,0 +1,333 @@
+/*notes
+nav width:  335px;
+Font:  Helvetica;
+Font sizes: ;
+	Bubbles:  14pt;
+	Nav header: 18px;
+	Nav AND table items: 16px;
+	Date:  21pt;
+
+	Colors: ;
+	Date: #050505;
+	Table items:  #060606;
+	Add new to do AND selected todos AND selected bubbles: #148fd5 (blue);
+	Grey bubbles: #6b7292;
+	Greyed out items: #b3b3b3;
+	Highlighted nav row: #383f5f;
+	Background color: #464f77;
+	Background color(white):#ffffff
+	Table border: #e7e7e7;
+	
+	POPUP
+	Popup grey effect:  DOESNT AFFECT NAV;
+	Popup headings text color: #060606;
+	Popup input text color: #707070;
+	Placeholder text color: #757575;
+	Popup button color: #148fd5;
+	popup approximate dimensions: 575x400;
+
+*/
+
+@import url("reset.css");
+* {
+	line-height: 40px;
+	box-sizing: border-box;
+}
+table.nav-table {
+	border-collapse: collapse;
+	width: 100%;
+	margin-bottom: 40px;
+}
+tr.completed td p {
+	text-decoration: line-through;
+	color: #b3b3b3;
+}
+
+
+main, nav {
+	z-index: 1;
+
+}
+
+html {
+	font-family: "Helvetica", arial, sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	letter-spacing: 0.5px;
+}
+nav {
+	 float: left;
+}
+
+img {
+	display: inline-block;
+	width: 26px;
+}
+p {
+	display: inline-block;
+}
+
+tr {
+	display: block;
+	color: #b3b3b3;
+}
+td {
+	display: inline-block;
+}
+
+
+/* NAV */
+nav {
+	display: block;
+	width: 335px;
+	padding: 60px 0 0 0;
+	color: #fff;
+	background: #464f77;
+	height: 100vh;
+}
+nav tbody tr td:first-child {
+	padding: 0 100px 0 42px;
+}
+
+nav th p {
+	vertical-align: middle;
+	/*padding: 12.5px 0 12.5px 0;*/
+	margin-right: 60px;
+}
+nav th {
+	display: inline-block;
+}
+
+
+.nav-table img {
+	vertical-align: middle;
+	margin-right: 5px;
+
+}
+
+nav td, nav th {
+	font-weight: 300;
+}
+nav tr {
+	padding-left: 98px;
+
+}
+
+tr.highlighted {
+	color: #fff;
+	background: #383f5f;
+}
+thead th:first-child {
+	font-size: 18px;
+	color: #fff;
+}
+
+p.bubble-number {
+	font-size: 14px;
+	line-height: 8px;
+	padding: 5px 5px;
+	margin-bottom: 5px;
+	border-radius: 10px;
+	background: #6b7292;
+}
+.highlighted .bubble-number {
+	background: #148fd5;
+	color: #fff;
+}
+/* MAIN*/
+
+main {
+	display: block;
+	float: left;
+	height: 100vh;
+	width: calc(100% - 335px);
+	padding: 20px 100px 100px 20px;
+}
+main h1, img#cheez-boiga {
+	margin-left: 10px;
+}
+img#cheez-boiga {
+	opacity: 0%;
+}
+main h1 {
+	display: inline-block;
+	font-size: 21px;
+	font-weight: normal;
+	padding-right: 18px;
+}
+main thead p {
+	font-weight: normal;
+	color: #148fd5;
+}
+main td img:first-child,
+main th img:first-child {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+main table {
+	position: relative;
+	width: 100%;
+	border-collapse: collapse;
+}
+main td {
+	color: black;
+}
+
+main table td {
+	padding: 5px 0 5px 0;
+}
+main table img {
+	width: 15px;
+}
+main td:hover {
+	color: #148fd5;
+	cursor: pointer;
+}
+main th img:hover,
+main th p:hover {
+	opacity: 75%;
+	cursor: pointer;
+}
+main tr, 
+main thead {
+	border-bottom: 1px solid #b9b9b9;
+	display: block;
+}
+main tr {
+	position: relative;
+}
+
+main tr img:last-child {
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	top: 15px;
+}
+main tr:last-child {
+	border: none;
+}
+
+#date {
+	height: 40px;
+	line-height: 32px;
+	display: block;
+	padding: 0;
+	/*margin-top: 20px;*/
+	margin-bottom: 30px;
+}
+section#date p {
+	vertical-align: middle;
+}
+
+/* Modal Fieldset*/
+#modal-toggle, #boiga-check {
+	display: none;
+}
+
+fieldset {
+	padding: 20px 25px 40px 40px;
+	/*padding: 10px;*/
+	display: none;
+	position: fixed;
+	left: calc(50% - 290px);
+	top: calc(50% - 200px);
+	z-index: 2;
+	background: #fff;
+	width: 580px;
+	height: 400px;
+}
+#modal-toggle:checked + fieldset {
+	display: block;
+} 
+fieldset input, fieldset label {
+	line-height: 30px;
+	margin: 10px 0;
+}
+input[type="submit"] {
+	padding: 0 10px;
+	width: 45%;
+	background: #148fd5;
+	border: none;
+	border-radius: 7px;
+	color: white;
+	font-size: 16px;
+	font-weight: normal;
+	cursor: pointer;
+}
+#title-column {
+	line-height: 30px;
+	position: relative;
+	top: -203px;
+	height: 100%;
+	width: 100px;
+	display: inline-block;
+}
+#title-column label {
+	display: inline-block;
+}
+#title-column #description {
+	position: relative;
+	/*top: -30px;*/
+}
+
+#input-column {
+	width: 370px;
+	display: inline-block;
+}
+#title {
+	display: block;
+	width: 100%;
+}
+#day, #month, #year {
+	width: 25%;
+}
+
+#modal-toggle:checked + fieldset + main > div{
+	position: absolute;
+	left: 335px;
+	top: 0;
+	height: 100vh;
+	width: 100%;
+	background-color: #cccccc;
+	z-index: -1;
+	opacity: 75%;
+}
+/*cheeseburger toggle */
+
+@media (max-width: 767px) {
+	nav {
+		display: none;
+	}
+	main {
+		width: 100%;
+	}
+	img#cheez-boiga {
+	opacity: 100%;
+	cursor: pointer;
+	}
+
+	#modal-toggle:checked + fieldset + main > div{
+	left: 0;
+	}
+	#boiga-check:checked + nav{
+	display: block;
+	/*margin-right: -335px;*/
+	}
+	#boiga-check:checked + nav ~ main{
+	width: calc(100% - 335px);
+	/*width: 300px;*/
+	padding-right: 20px;
+	}
+
+	#boiga-check:checked + nav ~ main table {
+		width: 1000px;
+	}
+
+	#boiga-check:checked + nav ~ main section {
+		width: 1000px;
+	}
+
+
+
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>your page title goes here</title>
+  <meta charset="utf-8" />
+</head>
+<body>
+	<form method="post" action="#">
+		<fieldset>
+			<dl>
+				<dt><label for="first_name">First</label></dt>
+				<dd>
+					<input type="text" name="first_name" id="first_name" required >
+				</dd>
+				<dt><label for="last_name">Last</label></dt>
+				<dd>
+					<input type="text" name="last_name" id="last_name" required>
+				</dd>
+			<dt><label for="email">Email</label></dt>
+
+			<dd>
+				<input type="email" name="email" id="email" required autocomplete="off" autocapitalize="none">
+			</dd>
+			<dt><label for="phone_type">Phone Type</label></dt>
+			<dd><select name="phone_type" id="phone_type" required>
+				<option name="phone_type" id="home">Home</option>
+				<option name="phone_type" id="work" selected>Work</option>
+				<option name="phone_type" id="cell">Cell</option>
+			</select></dd>
+			<dt><label for="phone_number">Phone Number</label></dt>
+			<dd>
+				<input type="tel" name="phone_number" id="phone_number" placeholder="xxx-xxx-xxxx" required>
+			</dd>
+			<dt><label for="user_comments">User Comments</label></dt>
+			<dd>
+				<textarea name="user_comments" id="user_comments" rows="6" cols="80" maxlength="320" placeholder="Leave any optional comments here"></textarea>
+			</dd>
+
+
+			
+		</dl>
+		<input type="submit" value="Send" id="send">
+		</fieldset>
+	</form>
+</body>
+</html>
